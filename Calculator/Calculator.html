@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <script src="Calculatrice.js" ></script>
+    <link href="Calculatrice.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+    <table>
+        <tr>
+            <td colspan="4" class="res"><input type="text" disabled id="res"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="AC" onclick="clearDisplay()"/></td>
+            <td><input type="button" value="DE" onclick="deleteChar()"/></td>
+            <td><input type="button" value="." onclick="ajouter('.')"/></td>
+            <td><input type="button" value="/" onclick="ajouter('/')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="ajouter('7')"/></td>
+            <td><input type="button" value="8" onclick="ajouter('8')"/></td>
+            <td><input type="button" value="9" onclick="ajouter('9')"/></td>
+            <td><input type="button" value="*" onclick="ajouter('*')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="ajouter('4')"/></td>
+            <td><input type="button" value="5" onclick="ajouter('5')"/></td>
+            <td><input type="button" value="6" onclick="ajouter('6')"/></td>
+            <td><input type="button" value="-" onclick="ajouter('-')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="ajouter('1')"/></td>
+            <td><input type="button" value="2" onclick="ajouter('2')"/></td>
+            <td><input type="button" value="3" onclick="ajouter('3')"/></td>
+            <td><input type="button" value="+" onclick="ajouter('+')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="ajouter('0')"/></td>
+            <td><input type="button" value="00" onclick="ajouter('00')"/></td>
+            <td><input type="button" value="+/-" onclick="invertSign()"/></td>
+            <td><input type="button" value="=" onclick="calculate()" class="equal"/></td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
